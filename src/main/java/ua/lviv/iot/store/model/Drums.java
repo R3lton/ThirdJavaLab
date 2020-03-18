@@ -6,10 +6,10 @@ public class Drums extends AbstractMusicalInstrument {
 
 	private int numberOfDrumSticks;
 
-	public Drums(int iD, String color, double priceInUAH, double weightInKilograms,
+	public Drums(int id, String color, double priceInUAH, double weightInKilograms,
 			EnumSet<TypeOfMusicalInstrument> typeOfMusicalInstrument,
 			EnumSet<MusicalInstrumentForBand> musicalInstrumentForBand) {
-		super(iD, color, priceInUAH, weightInKilograms, typeOfMusicalInstrument, musicalInstrumentForBand);
+		super(id, color, priceInUAH, weightInKilograms, typeOfMusicalInstrument, musicalInstrumentForBand);
 	}
 
 	public int getNumberOfDrumSticks() {

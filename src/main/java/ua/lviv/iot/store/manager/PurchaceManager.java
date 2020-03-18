@@ -3,7 +3,6 @@ package ua.lviv.iot.store.manager;
 import java.util.EnumSet;
 import java.util.LinkedList;
 import java.util.List;
-
 import ua.lviv.iot.store.model.AbstractMusicalInstrument;
 import ua.lviv.iot.store.model.MusicalInstrumentForBand;
 import ua.lviv.iot.store.model.TypeOfMusicalInstrument;

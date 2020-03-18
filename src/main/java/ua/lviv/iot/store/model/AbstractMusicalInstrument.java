@@ -7,7 +7,7 @@ public abstract class AbstractMusicalInstrument {
 	private static final int DEFAULT_YEAR_OF_PRODUCTION = 1999;
 	private static final String DEFAULT_PRODUCER = "Ukrainian Producer";
 
-	protected int ID;
+	protected int id;
 	protected String color;
 	protected double priceInUAH;
 	protected double weightInKilograms;
@@ -16,19 +16,19 @@ public abstract class AbstractMusicalInstrument {
 	protected String producer;
 	protected int yearOfProduction;
 
-	public AbstractMusicalInstrument(int iD, String color, double priceInUAH, double weightInKilograms,
+	public AbstractMusicalInstrument(int id, String color, double priceInUAH, double weightInKilograms,
 			EnumSet<TypeOfMusicalInstrument> typeOfMusicalInstrument,
 			EnumSet<MusicalInstrumentForBand> musicalInstrumentForBand) {
-		this(iD, color, priceInUAH, weightInKilograms, typeOfMusicalInstrument, musicalInstrumentForBand,
+		this(id, color, priceInUAH, weightInKilograms, typeOfMusicalInstrument, musicalInstrumentForBand,
 				DEFAULT_PRODUCER, DEFAULT_YEAR_OF_PRODUCTION);
 
 	}
 
-	public AbstractMusicalInstrument(int iD, String color, double priceInUAH, double weightInKilograms,
+	public AbstractMusicalInstrument(int id, String color, double priceInUAH, double weightInKilograms,
 			EnumSet<TypeOfMusicalInstrument> typeOfMusicalInstrument,
 			EnumSet<MusicalInstrumentForBand> musicalInstrumentForBand, String producer, int yearOfProduction) {
 		super();
-		ID = iD;
+		this.id = id;
 		this.color = color;
 		this.priceInUAH = priceInUAH;
 		this.weightInKilograms = weightInKilograms;
@@ -39,11 +39,11 @@ public abstract class AbstractMusicalInstrument {
 	}
 
 	public int getID() {
-		return ID;
+		return id;
 	}
 
-	public void setID(int iD) {
-		ID = iD;
+	public void setID(int id) {
+		this.id = id;
 	}
 
 	public String getColor() {

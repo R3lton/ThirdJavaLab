@@ -1,6 +1,7 @@
 package ua.lviv.iot.store.manager;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -8,10 +9,9 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ua.lviv.iot.store.manager.PurchaceManager;
 import ua.lviv.iot.store.model.AbstractMusicalInstrument;
-import ua.lviv.iot.store.model.TypeOfMusicalInstrument;
 import ua.lviv.iot.store.model.MusicalInstrumentForBand;
+import ua.lviv.iot.store.model.TypeOfMusicalInstrument;
 
 class PurchaceManagerTest extends BaseMusicalInstrumentTest {
 
@@ -42,7 +42,7 @@ class PurchaceManagerTest extends BaseMusicalInstrumentTest {
 
 		List<AbstractMusicalInstrument> productFromFolkInstrumentFound = manager
 				.findProductByType(EnumSet.of(TypeOfMusicalInstrument.FOLK_INSTRUMENTS));
-		assertEquals(2	, productFromFolkInstrumentFound.size());
+		assertEquals(2, productFromFolkInstrumentFound.size());
 		for (AbstractMusicalInstrument currentProductsAvailable : productFromFolkInstrumentFound) {
 			assertTrue(currentProductsAvailable.getTypeOfMusicalInstrument()
 					.contains(TypeOfMusicalInstrument.FOLK_INSTRUMENTS));
