@@ -6,10 +6,10 @@ public class Domra extends AbstractMusicalInstrument {
 
 	private int musicalStrings;
 
-	public Domra(int iD, String color, double priceInUAH, double weightInKilograms,
+	public Domra(int id, String color, double priceInUAH, double weightInKilograms,
 			EnumSet<TypeOfMusicalInstrument> typeOfMusicalInstrument,
 			EnumSet<MusicalInstrumentForBand> musicalInstrumentForBand) {
-		super(iD, color, priceInUAH, weightInKilograms, typeOfMusicalInstrument, musicalInstrumentForBand);
+		super(id, color, priceInUAH, weightInKilograms, typeOfMusicalInstrument, musicalInstrumentForBand);
 	}
 
 	public int getMusicalStrings() {

@@ -6,10 +6,10 @@ public class Panpipe extends AbstractMusicalInstrument {
 
 	private int numberOfHoles;
 
-	public Panpipe(int iD, String color, double priceInUAH, double weightInKilograms,
+	public Panpipe(int id, String color, double priceInUAH, double weightInKilograms,
 			EnumSet<TypeOfMusicalInstrument> typeOfMusicalInstrument,
 			EnumSet<MusicalInstrumentForBand> musicalInstrumentForBand) {
-		super(iD, color, priceInUAH, weightInKilograms, typeOfMusicalInstrument, musicalInstrumentForBand);
+		super(id, color, priceInUAH, weightInKilograms, typeOfMusicalInstrument, musicalInstrumentForBand);
 	}
 
 	public int getNumberOfHoles() {

@@ -1,15 +1,15 @@
 package ua.lviv.iot.store.manager;
 
+import java.util.EnumSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.EnumSet;
 
 import ua.lviv.iot.store.model.AbstractMusicalInstrument;
-import ua.lviv.iot.store.model.TypeOfMusicalInstrument;
-import ua.lviv.iot.store.model.MusicalInstrumentForBand;
 import ua.lviv.iot.store.model.Domra;
 import ua.lviv.iot.store.model.Drums;
+import ua.lviv.iot.store.model.MusicalInstrumentForBand;
 import ua.lviv.iot.store.model.Panpipe;
+import ua.lviv.iot.store.model.TypeOfMusicalInstrument;
 
 class BaseMusicalInstrumentTest {
 	protected List<AbstractMusicalInstrument> instruments = new LinkedList<AbstractMusicalInstrument>();
