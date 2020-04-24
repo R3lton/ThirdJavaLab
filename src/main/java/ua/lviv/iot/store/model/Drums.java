@@ -20,4 +20,16 @@ public class Drums extends AbstractMusicalInstrument {
 		this.numberOfDrumSticks = numberOfDrumSticks;
 	}
 
+	public String getHeaders() {
+		return super.getHeaders() + ", numberOfDrumSticks";
+	}
+
+	public String toCSV() {
+		return super.toCSV() + ", " + numberOfDrumSticks;
+	}
+
+	@Override
+	public String toString() {
+		return "Drums [numberOfDrumSticks=" + numberOfDrumSticks + super.toString();
+	}
 }

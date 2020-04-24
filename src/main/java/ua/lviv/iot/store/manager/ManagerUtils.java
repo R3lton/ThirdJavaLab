@@ -53,7 +53,7 @@ public class ManagerUtils {
 	};
 
 	private static class PriceComparator implements Comparator<AbstractMusicalInstrument>, Serializable {
-		private static final long serialVersionUID = 8317167932427493028L;
+		private static final long serialVersionUID = 8317167932461794587L;
 
 		@Override
 		public int compare(AbstractMusicalInstrument firstInstrument, AbstractMusicalInstrument secondInstrument) {

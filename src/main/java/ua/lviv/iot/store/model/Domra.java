@@ -20,4 +20,16 @@ public class Domra extends AbstractMusicalInstrument {
 		this.musicalStrings = musicalStrings;
 	}
 
+	public String getHeaders() {
+		return super.getHeaders() + ", musicalStrings";
+	}
+
+	public String toCSV() {
+		return super.toCSV() + ", " + musicalStrings;
+	}
+
+	@Override
+	public String toString() {
+		return "Domra [musicalStrings=" + musicalStrings + super.toString();
+	}
 }
