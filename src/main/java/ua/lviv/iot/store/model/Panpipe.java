@@ -20,4 +20,16 @@ public class Panpipe extends AbstractMusicalInstrument {
 		this.numberOfHoles = numberOfHoles;
 	}
 
+	public String getHeaders() {
+		return super.getHeaders() + ", numberOfHoles";
+	}
+
+	public String toCSV() {
+		return super.toCSV() + ", " + numberOfHoles;
+	}
+
+	@Override
+	public String toString() {
+		return "Panpipe [numberOfHoles=" + numberOfHoles + super.toString();
+	}
 }

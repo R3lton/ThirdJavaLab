@@ -110,4 +110,21 @@ public abstract class AbstractMusicalInstrument {
 		return this.musicalInstrumentForBand.containsAll(criterion);
 	}
 
+	public String toCSV() {
+		return id + ", " + color + ", " + priceInUAH + ", " + weightInKilograms + ", " + typeOfMusicalInstrument + ", "
+				+ musicalInstrumentForBand + ", " + producer + ", " + yearOfProduction;
+	}
+
+	public String getHeaders() {
+
+		return "id, color, priceInUAH, weightInKilograms, typeOfMusicalInstrument, musicalInstrumentForBand, producer, yearOfProduction";
+	}
+
+	@Override
+	public String toString() {
+		return "id=" + id + ", color=" + color + ", priceInUAH=" + priceInUAH + ", weightInKilograms="
+				+ weightInKilograms + ", typeOfMusicalInstrument=" + typeOfMusicalInstrument
+				+ ", musicalInstrumentForBand=" + musicalInstrumentForBand + ", producer=" + producer
+				+ ", yearOfProduction=" + yearOfProduction + "]";
+	}
 }
